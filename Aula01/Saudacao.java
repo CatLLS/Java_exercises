@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 
-/*criando uma nova classe */
+/*criando uma nova classe, é uma classe com o mesmo nome do arquivo */
 public class Saudacao{
     public static void main(String[] args){
         /*Classes podem ser instanciadas como objetos, importando-as, criando um novo objeto */
