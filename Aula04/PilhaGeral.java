@@ -14,7 +14,7 @@ public class PilhaGeral<T>{
         return topoPilha == -1;
     }
     public boolean isFull(){
-        return topoPilha== vetor.length -1;
+        return topoPilha== vetor.length -1; //em java quando é tipo geral o length é sem parênteses!!!
     }
     public void push(T elemento) throws Exception{
         if (!this.isFull())
