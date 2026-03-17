@@ -19,7 +19,7 @@ public class Pilha{
         return false;*/
     }
     public boolean isFull(){
-        return topoPilha == (elementos.length()-1);
+        return topoPilha == (elementos.length-1);
     }
     public void push(int e) throws Exception{
         if(!this.isFull()){

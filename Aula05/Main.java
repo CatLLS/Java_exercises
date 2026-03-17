@@ -24,14 +24,14 @@ public class Main{
 
 
         boolean vezImpar = true;
-        Integer valor;
+        int valor;
         while(!filaImpar.qIsEmpty() || !filaPar.qIsEmpty()){
 
            if (vezImpar && !filaImpar.qIsEmpty()) 
             valor = filaImpar.deQueue();
            else if (!filaPar.qIsEmpty())
             valor = filaPar.deQueue();
-        
+
            if(valor>0){
             pilha.push(valor);
            }else{
@@ -42,6 +42,10 @@ public class Main{
            vezImpar = !vezImpar;
         }
 
-        entrada.close()
+        while(!pilha.isEmpty()){
+            System.out.println(pilha.pop());
+        }
+
+        entrada.close();
     }
 }

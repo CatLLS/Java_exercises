@@ -1,8 +1,8 @@
 public class FilaCircular{
     //atributos
     private int tamanho;
-    private static final TAMDEF = 100;
-    private vetor[];
+    private static final  int TAMDEF = 100;
+    private int vetor[];
     private int front;
     private int rear;
     private int qtde;
@@ -25,10 +25,10 @@ public class FilaCircular{
         return this.qtde==tamanho;
     }
     public void enQueue(int num) throws Exception{
-        if (!qIsFull){
+        if (!qIsFull()){
             //coloca no final
             vetor[rear++]=num;
-            rear = rear % this.tamanho
+            rear = rear % this.tamanho;
             qtde++;
         }else{
             throw new Exception("Overflow - fila cheia");
@@ -36,7 +36,7 @@ public class FilaCircular{
     }
     public int deQueue() throws Exception{
         //tira do começo
-        if(!qIsEmpty){
+        if(!qIsEmpty()){
             int temp;
             temp = vetor[front];
             front = ++front % this.tamanho;
