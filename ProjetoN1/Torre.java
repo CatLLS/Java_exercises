@@ -1,7 +1,7 @@
 public class Torre{
     //atributos
     private int qtdeDiscos; //qtde de discos na torre
-    private Pilha <Disco> pilhaDiscos;//eu posso fazer isso?
+    private Pilha <Disco> pilhaDiscos;
     //inicializadores
     public Torre(int t){
         this.qtdeDiscos = t;
@@ -11,9 +11,7 @@ public class Torre{
     public int quantosDiscos(){
         return qtdeDiscos;
     }
-    public void preencherTorre(){
-        for (int i=1; i<=t; i++){ 
+    public void pushTorre(){
             this.pilhaDiscos.push()
-        }
     }
 }
