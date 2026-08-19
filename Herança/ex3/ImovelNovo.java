@@ -5,7 +5,7 @@ public class ImovelNovo extends Imovel {
         super(e,p);
         this.adicional=a;
     }
-    public double calcular_Preco(){
+    public double calcular_preco(){
         return preco+adicional;
     }
 }

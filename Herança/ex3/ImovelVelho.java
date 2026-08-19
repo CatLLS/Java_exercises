@@ -5,7 +5,7 @@ public class ImovelVelho extends Imovel{
         super(e,p);
         this.desconto=d;
     }
-    public double calcular_Preco(){
+    public double calcular_preco(){
         return preco-desconto;
     }
 }
