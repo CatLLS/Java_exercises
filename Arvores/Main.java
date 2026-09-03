@@ -11,6 +11,16 @@ public class Main {
         arvore.inserirNo(40);
         System.out.println("Elementos inseridos: 50, 30, 70, 20, 40\n");
 
+        /*
+                   50
+                30      70
+            20    40
+        */
+
+        System.out.println("Arvore possui: "+ arvore.contaNos() +" nós.");
+        System.out.println("E "+ arvore.contaFolhas() +" folhas \nE "+arvore.contaInternos() +" internos.\n Com altura ="+ arvore.altura());
+        arvore.percorrePorNivel();
+
         // 2. Teste dos Caminhamentos (Exibições)
         // Passamos 'arvore.pai' como argumento que é a raiz da árvore
         System.out.println("=== Caminhamento Pré-Ordem ===");
