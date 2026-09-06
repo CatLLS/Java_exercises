@@ -1,3 +1,0 @@
-interface Expressao{
-    int interpretar();
-}

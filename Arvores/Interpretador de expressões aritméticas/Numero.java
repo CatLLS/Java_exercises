@@ -1,9 +1,14 @@
-public class Numero implements Expressao{
-    private int valor;
-    public Numero(int valor){
-        this.valor=valor;
+package interpretador;
+
+public class Numero implements NoExpressao {
+    private final double valor;
+
+    public Numero(double valor) {
+        this.valor = valor;
     }
-    public int interpretar(){
-        return valor;
+
+    @Override
+    public double interpretar() {
+        return this.valor;
     }
 }
