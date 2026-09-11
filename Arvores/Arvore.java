@@ -163,6 +163,3 @@ public class ArvoreBinaria {
             System.out.print(raiz.data + " "); 
         }
     }
-
-
-}
